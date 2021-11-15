@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width", initial-scale=1.0>
+	<title>School website</title>
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    	<nav>
+    		<a href="index.html"><img src="ebs2.png" ></a>
+    		<div class="nav-links" id="navLinks">
+    			<i class="fa fa-times" onclick="hideMenu()"></i>
+    			<ul>
+    				<li><a href="new.html">НҮҮР</a></li>
+    				<li><a href="about.html">ТҮҮХ</a></li>
+    				<li><a href="course.html">СУРГАЛТ</a></li>
+    				<li><a href="blog.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></li>
+    				<li><a href="contact.html">ХОЛБОО БАРИХ</a></li>
+    			</ul>
+    		</div>
+    		<i class="fa fa-bars" onclick="showMenu()" ></i>
+    	</nav>
+    	<h1>Мэдээ мэдээлэл</h1>
+<!---blog page content-->
+<section class="blog-content">
+	<div class="row">
+		<div class="blog-left">
+			<img src="gadna.jpg">
+			<h2>Цахим орчин ба сургууль</h2>
+			<p>Эндээс та Ерөнхий боловсрол, Насан туршийн, Тусгай хэрэгцээт, Сургуулийн өмнөх, Гэр бүлийн хичээлүүд болон мэдээллүүдийг авах боломжтой.<br><a href="https://medle.mn/">Мэдлээ Цахим контент</a></p>
+			<br>
+			<p>Боловсролын үнэлгээний төвийн үйл ажиллагаатай холбоотой мэдээ, албан ёсны цахим хаягаар, утсаар, онлайн чатаар хүлээж авах боломжтой.<br><a href="https://www.meds.gov.mn/"> Боловсрол, шинжлэх ухааны яам</a></p>
+			<br>
+			<p>Бүх ангийн теле хичээл, цахим хичээл, бие даан хийх суралцах ажлын дэвтрийг багтаасан Боловсролын хүрээлэнгийн цахим хичээлийн веб сайт.<br><a href="http://43.228.131.34/mieredu/">Боловсролын хүрээлэнгийн цахим хичээлийн веб сайт</a></p>
+
+			
+		</div>
+		<div class="blog-right">
+		    <h3>Бидний зарим амжилт</h3>
+		    <div>
+		     	<span>Аймгийн “Тэргүүний хамт олон”</span>
+		     	<span>2009</span>
+		    </div>
+		    <div>
+		     	<span>Монгол Улсын “Топ” менежменттэй сургууль </span>
+		     	<span>2010</span>
+		    </div>
+		    <div>
+		     	<span>Хүмүүнлэг сургууль</span>
+		     	<span>2011</span>
+		    </div>
+		    <div>
+		     	<span>Сумын “Тэргүүний хамт олон”</span>
+		     	<span>2011</span>
+		    </div>
+		    <div>
+		     	<span>Аймгийн шилдэг дотуур байр</span>
+		     	<span>2012</span>
+		    </div>
+		    <div>
+		     	<span>аймгийн шилдэг Бага ангийн заах аргын нэгдэл</span>
+		     	<span>2012</span>
+		    </div>
+		    <div>
+		     	<span>“Даян дэлхийн Нэр төрөө эрхэмлэн дээдлэх өдөр”-өөр БСШУЯ-аас “Шилдэг зохион байгуулагч хамт олон” шагнал</span>
+		     	<span>2012</span>
+		     </div>
+		      <div>
+		     	<span>Аймгийн хэмжээнд анх удаа МУ-ын гавьяат багш Гомбын нэрэмжит улсын тэргүүний 1-р сургуультай “Сурагч солилцоо”-г зохион байгуулсан</span>
+		     	<span>2012</span>
+		     </div>
+		      <div>
+		     	<span>Говь-Алтай аймгийн шилдэг Бага ангийн заах аргын нэгдэл</span>
+		     	<span>2013</span>
+		     </div>
+		      <div>
+		     	<span>Байгальд ээлтэй “ЭКО” сургууль</span>
+		     	<span>2013</span>
+		     </div>
+		      <div>
+		     	<span>Монгол Улсын гавьяат хуульч, Хууль зүйн ухааны доктор, професер, хошууч генерал Баастын Пүрэвийн нэрэмжит сургууль...</span>
+		     	<span>2014</span>
+		     </div>
+		 </div>
+	</div>
+</section>
+<!-----Javascript for Toggle Menu----->
+    <script >
+    	var navLinks=document.getElementById("navLinks");
+
+    	 function showMenu(){
+    	 	navLinks.style.right="0";
+    	 }
+    	 function hideMenu(){
+    	 	navLinks.style.right="-200px";
+    	 }
+    </script>
+</body>
+</html>

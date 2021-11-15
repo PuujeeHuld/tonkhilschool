@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width", initial-scale=1.0>
+	<title>School website</title>
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    	<nav>
+    		<a href="index.html"><img src="ebs2.png" ></a>
+    		<div class="nav-links" id="navLinks">
+    			<i class="fa fa-times" onclick="hideMenu()"></i>
+    			<ul>
+    				<li><a href="new.html">НҮҮР</a></li>
+    				<li><a href="about.html">ТҮҮХ</a></li>
+    				<li><a href="course.html">СУРГАЛТ</a></li>
+    				<li><a href="blog.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></li>
+    				<li><a href="contact.html">ХОЛБОО БАРИХ</a></li>
+    			</ul>
+    		</div>
+    		<i class="fa fa-bars" onclick="showMenu()" ></i>
+    	</nav>
+    	<h1>Сургалт</h1>
+
+    </section>
+<!---course-->
+
+<section class="course">
+	<h1>Сургалтын статистик мэдээ </h1>
+	<p>2021-2022 оны хичээлийн жилд өдрийн ангийн 22 бүлэгт 434 суралцагч суралцаж байгаа бөгөөд үүний 230 суралцагч нь эмэгтэй, 204 нь эрэгтэй суралцагч юм.<br>Дүйцсэн хөтөлбөрөөр суралцаж буй 13 сурагчдаас бага ангид 2,дунд ангид 2,ахлах ангид суралцаж тус сургуульд нийт 477 суралцагч суралцаж байна.</p>
+	<div class="row">
+		<div class="course-col">
+			<h3>Бага анги</h3>
+			<p>Өдрийн ангид:<br>Бага ангийн 10 бүлгийн 214 суралцагчаас 102 нь эмэгтэй,112 нь эрэгтэй суралцагч байна</p>	
+		</div>
+		<div class="course-col">
+			<h3>Дунд анги</h3>
+			<p>Өглөөний ангид:<br>Дунд ангийн 8 бүлгийн 142 суралцагчаас 89 нь эмэгтэй,53 нь эрэгтэй суралцагч байна.</p>	
+		</div>
+		<div class="course-col">
+			<h3>Ахлах анги</h3>
+			<p>Өглөөний ангид:<br>Ахлах ангийн 4 бүлгийн 78 суралцагчаас 39 нь эмэгтэй,39ы нь эрэгтэй суралцагч байна.</p>		
+		</div>	
+		
+	</div>
+	<div>
+		<p>Тус сургуульд нийт 55 багш,ажилсагдын 17 нь эрэгтэй, 38 нь эмэгтэй ажиллагсад ажиллаж байна.Үүнд:<br>Захирал-1    Сургалтын менежер-2    Нийгмийн ажилтан-1<br>Үндсэн багш-29   Цагийн багш-1   Байрын багш-1   АББ-ын багш-1 <br>Нягтлан бодогч-1   Нярав-1    Бичиг хэрэг бичээч-1 <br>Эмч-1   Тогооч-2    Сантехникч-1  <br>Үйлчлэгч-3     Жижүүр-3   Галч-6</p>
+		</div>
+</section>
+<!---FAcilities-->
+<section class="facilities">
+	<h1>Бидний байгууламж</h1>
+	<p>Сургуультай хамаарал бүхий байгууламжууд</p>
+	<div class="row">
+		<div class="facilities-col">
+			<img src="bair.jpg">
+			<h3>Дотуур байр</h3>
+			<p>Дотуур байранд 2021-2022 оны хичээлийн жилд 40 суралцагч үүний 24 эмэгтэй 16 нь эрэгтэй суралцагч амьдарч байна.</p>
+		</div>
+		<div class="facilities-col">
+			<img src="galtogoo.jpg">
+			<h3>Гал тогоо</h3>
+			<p>Сургуулийн гал тогоо нь 2 тогоочтой ба бага ангийн хүүхдүүд болон дотуур байрны сурагчдыг хоолоор хангах үйл ажиллагаа явуулдаг.</p>			
+		</div>	
+		<div class="facilities-col">
+			<img src="hana.jpg">
+			<h3>Спорт авиралтын хана</h3>
+			<p>Монголын анхны стандартад нийцсэн спорт авиралтын ханыг “Сутайн бор” клубээс санаачлан Говь-Алтай аймгийн Тонхил суманд барьсан ба энэ жил 2 жилийн ойн баяр нь тохиосон.</p>	
+		</div>	
+	</div>
+</section>
+
+
+<!-----Javascript for Toggle Menu----->
+    <script >
+    	var navLinks=document.getElementById("navLinks");
+
+    	 function showMenu(){
+    	 	navLinks.style.right="0";
+    	 }
+    	 function hideMenu(){
+    	 	navLinks.style.right="-200px";
+    	 }
+    </script>
+
+
+</body>
+</html>
